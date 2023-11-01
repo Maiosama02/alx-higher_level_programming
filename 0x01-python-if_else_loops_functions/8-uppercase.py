@@ -4,5 +4,5 @@ def uppercase(string):
         ascii = ord(c)
         if 'a' <= c <= 'z':
             ascii -= 32
-        print("{:chr}".format(ascii), end="")
+        print("{}".format(ascii), end="")
     print("")
