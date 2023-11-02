@@ -10,8 +10,6 @@ if __name__ == "__main__":
         print("{} arguments:".format(length))
 
     if length >= 1:
-        length = 0
         for args in sys.argv:
-            if length != 0:
-                print("{}: {}".format(length, args))
+            print("{}: {}".format(length, args))
             length += length
