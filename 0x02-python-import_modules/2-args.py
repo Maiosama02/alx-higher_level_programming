@@ -8,7 +8,10 @@ if __name__ == "__main__":
         print("{} argument:".format(length))
     else:
         print("{} arguments:".format(length))
+
     if length >= 1:
+        length = 0
         for args in sys.argv:
-            print("{}: {}".format(length, args))
-        length += length
+            if length != 0:
+                print("{}: {}".format(length, args))
+            length += length
