@@ -48,7 +48,7 @@ int compare_lists(listint_t *head1, listint_t *head2)
     if (temp1 == NULL && temp2 == NULL)
         return 1;
 
-    return 0;
+    return 1;
 }
 
 /**
